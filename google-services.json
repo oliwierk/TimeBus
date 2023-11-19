@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633834667638",
+    "project_id": "timebus-33ac8",
+    "storage_bucket": "timebus-33ac8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633834667638:android:40cd9d0b7a156fd7c6a957",
+        "android_client_info": {
+          "package_name": "com.kotlicki.TimeBus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwUS2EjHOT4idzGvPPsC0HfOOiuHsmz3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

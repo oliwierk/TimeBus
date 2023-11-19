@@ -7,7 +7,11 @@ import tw from "twrnc";
 
 export type RootStackParamList = {
 	Home: undefined;
-	Routes: undefined;
+	Routes: {
+		departureStop: string;
+		arrivalStop: string;
+		departureTime: string;
+	};
 	Schedule: undefined;
 };
 

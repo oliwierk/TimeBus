@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBIClb6E1d8dfu9t-o8bSeSbXK1KFIc2eQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>633834667638</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kotlicki.TimeBus</string>
+	<key>PROJECT_ID</key>
+	<string>timebus-33ac8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>timebus-33ac8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:633834667638:ios:729f9d5bc56d4ed9c6a957</string>
+</dict>
+</plist>
