@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { SafeAreaView, Text, TextInput, TouchableOpacity } from "react-native";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 
 import tw from "twrnc";
@@ -34,7 +36,7 @@ const Header = ({ title, onSearch }: HeaderProps) => {
 
 	return (
 		<SafeAreaView style={tw`h-60 w-full flex items-center bg-blue-950`}>
-			<Text style={tw`text-slate-100 text-2xl mb-4`}>{title}</Text>
+			<Text style={tw`text-slate-100 text-2xl mb-4`}>{title} </Text>
 			<TextInput
 				style={tw`bg-slate-100 w-72 h-8 p-2 rounded-lg mb-4`}
 				onChangeText={setDepartureStop}
@@ -51,7 +53,7 @@ const Header = ({ title, onSearch }: HeaderProps) => {
 			/>
 			<TouchableOpacity
 				onPress={showDatePicker}
-				style={tw`bg-slate-100 w-16 h-8 p-2 rounded-lg mb-4 self-start ml-11`}
+				style={tw`bg-slate-100 w-36 h-8 p-2 rounded-lg mb-4 self-start ml-11`}
 			>
 				<Text style={tw`text-center`}>
 					{departureTime || "Wybierz godzinę"}
@@ -60,7 +62,7 @@ const Header = ({ title, onSearch }: HeaderProps) => {
 			<DateTimePickerModal
 				isVisible={isDatePickerVisible}
 				mode='time'
-				themeVariant={"light"}
+				themeVariant={"dark"}
 				onConfirm={handleConfirm}
 				onCancel={hideDatePicker}
 			/>
@@ -68,7 +70,9 @@ const Header = ({ title, onSearch }: HeaderProps) => {
 				style={tw`bg-blue-700 p-2 rounded-lg `}
 				onPress={() => onSearch(departureStop, arrivalStop, departureTime)}
 			>
-				<Text style={tw`text-white text-lg`}>Szukaj</Text>
+				<Text style={tw`text-white text-lg text-center`}>
+					<FontAwesomeIcon icon={faMagnifyingGlass} size={36} color={"white"} />
+				</Text>
 			</TouchableOpacity>
 		</SafeAreaView>
 	);

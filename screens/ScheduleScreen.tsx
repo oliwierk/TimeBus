@@ -7,7 +7,6 @@ import tw from "twrnc";
 export default function ScheduleScreen() {
 	return (
 		<View style={tw`h-full`}>
-			<Header title='Rozkład' />
 			<Navbar />
 		</View>
 	);

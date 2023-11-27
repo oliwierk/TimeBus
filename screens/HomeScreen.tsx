@@ -22,10 +22,13 @@ export default function HomeScreen() {
 		});
 	};
 	return (
-		<TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-			<View style={tw`h-full`}>
-				<Header title='TimeBus' onSearch={handleSearch} />
-			</View>
-		</TouchableWithoutFeedback>
+		<View style={tw`h-full`}>
+			<TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+				<View style={tw`flex-1`}>
+					<Header title='TimeBus' onSearch={handleSearch} />
+				</View>
+			</TouchableWithoutFeedback>
+			<Navbar></Navbar>
+		</View>
 	);
 }
