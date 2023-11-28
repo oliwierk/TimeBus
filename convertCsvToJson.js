@@ -38,7 +38,7 @@ csvFiles.forEach(fileName => {
 	const csvFilePath = path.join("GTFS", fileName);
 	const jsonFilePath = path.join(
 		"GTFS",
-		`${path.basename("READY", ".txt")}.json`
+		`${path.basename(fileName, ".txt")}.json`
 	);
 	convertCsvToJson(csvFilePath, jsonFilePath);
 });
